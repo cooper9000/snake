@@ -17,7 +17,7 @@ score = 0
 high_score = 0
 
 
-# --- DRAW THE CHECKERBOARD ---
+# DRAW THE CHECKERBOARD
 
 tile_drawer = turtle.Turtle()
 tile_drawer.hideturtle()
@@ -102,7 +102,7 @@ def draw_tiles():
     tile_drawer.penup()
 
 
-# --- FOOD ---
+# FOOD
 
 food = turtle.Turtle()
 food.hideturtle()
@@ -148,7 +148,7 @@ def place_food():
             looking = False
 
 
-# --- HEADER / TITLE ---
+# HEADER AND TITLE
 
 title_deco = turtle.Turtle()
 title_deco.hideturtle()
@@ -171,7 +171,7 @@ def draw_header():
     title_deco.penup()
 
 
-# --- SCOREBOARD ---
+# SCOREBOARD
 
 scoreboard = turtle.Turtle()
 scoreboard.hideturtle()
@@ -194,7 +194,7 @@ def update_score():
                      font=("Courier", 14, "bold"))
 
 
-# --- MESSAGES ---
+# MESSAGES
 
 start_message = turtle.Turtle()
 start_message.hideturtle()
@@ -240,7 +240,7 @@ def draw_overlay():
         row = row + 1
 
 
-# --- SNAKE ---
+# SNAKE
 
 snake_drawer = turtle.Turtle()
 snake_drawer.hideturtle()
@@ -321,7 +321,7 @@ def make_snake():
     snake_segments.append(head)
 
 
-# --- DIRECTION CONTROLS ---
+# DIRECTION CONTROLS
 
 def go_right():
     global direction
@@ -347,7 +347,7 @@ def go_down():
         direction = "down"
 
 
-# --- GAME OVER ---
+# GAME OVER
 
 def game_over():
     global game_started, game_over_flag, high_score
@@ -378,7 +378,7 @@ def game_over():
                           font=("Courier", 14, "bold"))
 
 
-# --- RESTART ---
+# RESTART
 
 def restart_game():
     global game_started, game_over_flag, direction, score
@@ -414,7 +414,7 @@ def restart_game():
     screen.update()
 
 
-# --- START ---
+# START
 
 def start_game():
     global game_started
@@ -424,7 +424,7 @@ def start_game():
         game_loop()
 
 
-# --- GAME LOOP ---
+# GAME LOOP
 
 def game_loop():
     global score
@@ -501,7 +501,7 @@ def game_loop():
         screen.ontimer(game_loop, 100)
 
 
-# --- SET EVERYTHING UP ---
+# SET EVERYTHING UP
 
 draw_tiles()
 draw_header()
