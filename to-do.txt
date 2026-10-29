@@ -1,0 +1,3 @@
+- Separate program into multiple files in order to better manage each working part.
+- Align the Snake more accurately to the grid.
+- Allow multiple inputs to be recognized at the same time.
